@@ -1,0 +1,125 @@
+.Faqs {
+  width: 100%;
+  height: auto;
+  background-color: #222941;
+}
+
+.Faqs header {
+  width: 100%;
+  height: 55vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../../assets//images//slider/board-meeting.jpeg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Faqs header h1 {
+  font-family: "Axiforma Bold";
+  font-size: 30px;
+}
+
+.Faqs section {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.Faqs section h2 {
+  font-family: "Axiforma Bold";
+  font-size: 28px;
+  margin-bottom: 1rem;
+}
+
+.Faqs section p {
+  margin: 0 auto;
+  width: 70%;
+  font-family: "Axiforma Light";
+  font-size: 16px;
+  margin-bottom: 1rem;
+}
+
+.Faqs section h3 {
+  font-family: "Axiforma Bold";
+  font-size: 25px;
+  margin-bottom: 1rem;
+}
+
+.Faqs section div {
+  margin: 0 auto;
+  width: 70%;
+  background-color: #1c2235;
+  font-family: "Axiforma Light";
+  font-size: 16px;
+  margin-bottom: 1rem;
+  border-radius: 0.4rem;
+}
+
+.faq {
+  width: 100% !important;
+  margin: 0 !important;
+}
+
+.faq .faq-head {
+  width: 100%;
+  padding: 10px 0 10px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0;
+}
+
+.faq .faq-head i {
+  margin-right: 1rem;
+}
+
+.faq .faq-head p {
+  width: 100%;
+  text-align: left !important;
+  margin: 0;
+}
+
+.faq .faq-body {
+  width: 100%;
+  height: 0px;
+  /* padding: 15px; */
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "";
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  margin: 0;
+  transition: all 0.5s ease-in;
+}
+
+.faq .faq-body p {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.show .faq-body {
+  height: 100px;
+  padding: 15px;
+}
+
+@media (max-width: 1000px) {
+  .show .faq-body {
+    height: 150px;
+  }
+  .Faqs header h1 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 650px) {
+  .show .faq-body {
+    height: 200px;
+  }
+}

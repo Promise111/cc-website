@@ -1,0 +1,96 @@
+.packages {
+  /* width: 100vw; */
+  height: 100vh;
+  padding: 8rem 1.5rem 0 1.5rem;
+  overflow: scroll;
+}
+
+.packages h1 {
+  font-family: "Axiforma Bold";
+  font-size: 20px;
+}
+
+.packages-section {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  font-family: "Axiforma";
+}
+
+.package {
+  padding: 25px 50px;
+  color: #6494ae;
+  text-align: center;
+  background-color: #031422c5;
+  margin-top: 1.5rem;
+  border-radius: 0.5rem;
+}
+
+.package p i {
+  margin-right: 5px;
+}
+
+.package h2,
+.package h4 {
+  font-family: "Axiforma Bold";
+  color: #fff;
+}
+
+.package button {
+  margin-top: 1rem;
+  background-color: #0971fe;
+}
+
+.package button:hover {
+  border: 1px solid white;
+}
+
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* row-gap: 1rem; */
+}
+
+.modal-wrapper div {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-wrapper > div:last-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-wrapper .modal-error h1 {
+  font-size: 30px;
+  margin-top: 1.5rem;
+}
+
+.modal-wrapper > div:last-of-type button {
+  width: 100px;
+  border-radius: 0.4rem;
+  background-color: #7cd1f9;
+  color: white;
+  border: none;
+  font-family: "Axiforma Bold";
+}
+
+.modal-wrapper p {
+  font-family: "Axiforma";
+  font-size: 25px;
+}
+
+.modal-wrapper i {
+  color: red;
+}
+
+@media (max-width: 620px) {
+  .packages-section {
+    grid-template-columns: auto;
+  }
+}

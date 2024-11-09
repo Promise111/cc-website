@@ -1,0 +1,58 @@
+.left-side-bar {
+  width: 250px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding-top: 7rem;
+  background-color: #101729;
+  overflow: hidden;
+  /* transition: width 1s linear; */
+  border-right: 1px solid #bbd8ff70;
+  /* position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+.left-side-bar a {
+  cursor: pointer;
+  font-family: "Axiforma Bold";
+  padding: 15px 10px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  font-size: 12px;
+  color: #6494ae;
+}
+
+.left-side-bar a > i {
+  margin-right: 0.5rem;
+}
+
+.active {
+  color: #0971fe !important;
+}
+
+.paragraph {
+  font-size: 12px;
+}
+
+.show {
+  width: 250px !important;
+}
+
+.noShow {
+  width: 0 !important;
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 1000px) {
+  .left-side-bar {
+    /* width: 100vw; */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+  }
+}

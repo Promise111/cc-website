@@ -1,0 +1,131 @@
+.deposit {
+  height: 100vh;
+  padding: 8rem 1rem 0 1rem;
+}
+
+label {
+  margin-top: 2rem;
+}
+
+select,
+input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #6494ae;
+  background-color: #101729;
+  color: #fff;
+}
+
+input {
+  border-radius: 5px;
+}
+
+p {
+  margin-top: 1rem;
+  font-style: italic;
+  font-size: 12px;
+}
+
+.deposit-button {
+  font-family: "Axiforma Bold";
+  margin-top: 3rem;
+  color: white;
+  background-color: dodgerblue;
+}
+
+.input-field {
+  display: none;
+}
+
+.display {
+  display: block !important;
+}
+
+.deposit .input-field-input {
+  padding: 1rem;
+}
+
+.modal-confirmation {
+  font-family: "Axiforma Bold";
+  font-size: 25px;
+  padding: 5px 0;
+  border-bottom: 1px solid #1D2D40;
+  text-align: left;
+}
+
+.payment-text {
+  font-family: "Axiforma Bold";
+  font-size: 17px;
+  text-align: center;
+}
+
+.wallet-address {
+  font-family: "Axiforma Bold" !important;
+  border: 1px solid #1D2D40;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 0.4rem;
+  background-color: #101729;
+}
+
+.deposit-buttons {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.deposit-buttons > button {
+  border-radius: 0.4rem;
+}
+
+.deposit-buttons > button:first-of-type {
+  background-color: #52afee;
+  color: white;
+}
+
+.deposit-buttons > button:last-of-type {
+  background-color: transparent;
+  color: red;
+  border: 1px solid red;
+}
+
+.modal-confirmation-body > p {
+  font-family: "Axiforma";
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+.amount-text {
+  font-family: "Axiforma";
+  font-size: 15px;
+  text-align: center;
+  color: #fff;
+}
+
+p.error-text {
+  color: red;
+}
+
+p.text1 {
+  margin-top: 1rem !important;
+}
+
+p.text,
+p.text1 {
+  font-family: "Axiforma Bold";
+  margin: 0;
+  font-size: 10px;
+  text-align: left;
+}
+
+p.text i,
+p.text1 i {
+  margin-right: 5px;
+}
+
+p.text{
+  margin-top: 5px;
+}

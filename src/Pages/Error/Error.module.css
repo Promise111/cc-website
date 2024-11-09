@@ -1,0 +1,39 @@
+#error-wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#error-wrapper div h1 {
+  margin: 0;
+  font-weight: 800;
+  font-size: 12rem;
+}
+
+#error-wrapper div p {
+  margin: 1rem 0 0 0;
+  font-weight: 600;
+  font-size: 3rem;
+}
+
+#error-wrapper div button {
+  margin: 1rem 0 0 0;
+  background-color: #187cf6;
+  font-weight: 600;
+}
+
+#error-wrapper div a > button:hover {
+  border: 1px solid white;
+}
+
+@media (max-width: 500px) {
+  #error-wrapper div h1 {
+    font-size: 8rem;
+  }
+  #error-wrapper div p {
+    font-size: 2rem;
+  }
+}

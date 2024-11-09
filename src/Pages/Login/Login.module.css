@@ -1,0 +1,250 @@
+.login {
+  width: 100vw;
+  height: 100vh;
+  padding-top: 5rem;
+}
+
+.login .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login .error-text {
+  color: red !important;
+  text-align: center;
+}
+
+.login .logo > img {
+  width: 10rem;
+}
+
+.login .form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  overflow: hidden;
+}
+
+.login .form > form {
+  background-color: #fff;
+  border-radius: 0.2rem;
+  padding: 2rem;
+}
+
+.login .form > form > h2 {
+  color: #364a63;
+  margin: 0 0 1rem 0;
+  font-weight: 800;
+}
+
+.login .form > form > p {
+  color: #526484;
+  margin: 0;
+  font-weight: 400;
+  margin: 0 0 2rem 0;
+  font-size: 0.9rem;
+}
+
+.login .red-asterisk {
+  color: red;
+}
+
+.login label {
+  color: #344357;
+  font-weight: 700;
+  display: block;
+  margin: 0 0 0.5rem 0;
+}
+
+.login .form-input {
+  width: 100%;
+  overflow: hidden;
+}
+
+.login .form-input:first-of-type > input {
+  width: 100%;
+  display: block;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #dbdfea;
+  border-radius: 0.4rem;
+  padding: 0.6em 1.2em;
+  color: black;
+}
+
+.login .form-input > input:focus {
+  border: 1px solid #037dff;
+  box-shadow: 0 0 0 3px rgba(3, 125, 255, 0.1);
+}
+
+.login .form-input {
+  margin: 0 0 1.5rem 0;
+}
+
+.login .login-button {
+  width: 100%;
+  background-color: #0894ff;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  padding: 0.6em 1.2em;
+  font-size: 1rem;
+  font-weight: 900;
+}
+
+.links {
+  margin: 1.5rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.8rem;
+}
+
+.login .links a,
+a:visited {
+  color: #0894ff;
+  font-weight: 700;
+}
+
+.login .links a:hover {
+  color: #0078d4;
+  text-decoration: none;
+}
+
+.login .login-button:hover {
+  outline: 0;
+  background-color: #0078d4;
+}
+
+.login .footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  padding: 1rem 0 1rem 0;
+  width: inherit;
+  border-top: 1px solid #2a3a4e;
+  display: flex;
+  justify-content: space-around;
+  background-color: #1f2b3a;
+}
+
+.login .footer .left {
+  font-weight: 700;
+  color: #8094ae !important;
+}
+
+.login .footer .right a {
+  color: #0894ff !important;
+}
+
+.login .footer .right a:first-of-type {
+  margin-right: 3rem;
+}
+
+.login .footer .right a:hover {
+  color: #0078d4 !important;
+}
+
+.login .input {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  outline: none;
+  background-color: transparent;
+  border: 1px solid #dbdfea;
+  border-radius: 0.4rem;
+  color: black;
+  padding: 0 1.2em;
+}
+
+.login .input input {
+  width: inherit;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  color: black;
+}
+
+.login .input:focus-within {
+  border: 1px solid #037dff;
+  box-shadow: 0 0 0 3px rgba(3, 125, 255, 0.1);
+}
+
+.login .input svg {
+  color: #8094ae;
+}
+
+input::placeholder {
+  color: #cfdaed;
+  font-weight: 600;
+}
+
+.login .error {
+  border: 1px solid red !important;
+}
+.modal-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* row-gap: 1rem; */
+}
+
+.modal-wrapper p {
+  margin: 10px 0;
+}
+
+.modal-wrapper div {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-wrapper > div:last-of-type {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.modal-wrapper .modal-error h1 {
+  font-size: 30px;
+  margin: 1.5rem 0 0 0;
+}
+
+.modal-wrapper > div:last-of-type button {
+  width: 100px;
+  border-radius: 0.4rem;
+  background-color: #7cd1f9;
+  color: white;
+  border: none;
+  font-family: "Axiforma Bold";
+}
+
+.modal-btn {
+  margin: 0 auto;
+}
+
+@media (max-width: 900px) {
+  .login {
+    padding-top: 2rem;
+  }
+
+  .login .footer {
+    flex-direction: column-reverse;
+    text-align: center;
+    position: static;
+    margin-top: 2rem;
+  }
+
+  .footer .right {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .login .form > form {
+    width: 90%;
+  }
+}

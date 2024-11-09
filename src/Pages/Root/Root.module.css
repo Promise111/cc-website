@@ -1,0 +1,13 @@
+.main {
+  max-width: 2000px;
+  height: auto;
+}
+
+/* @media (min-width: 2000px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+} */

@@ -1,0 +1,98 @@
+.card {
+  border-radius: 1rem;
+  background-color: #01163d;
+  overflow: hidden;
+}
+
+.card header {
+  background-color: #52afee;
+  padding: 1rem 0;
+}
+
+.card header h2 {
+  font-family: "Axiforma Bold";
+}
+
+.card header p {
+  font-family: "Axiforma";
+}
+
+.card section {
+  padding: 1rem 0 0.5rem 0;
+}
+
+.daily {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  font-family: "Axiforma Bold";
+  border-bottom: 1px solid white;
+}
+
+.daily span {
+  color: #52afee;
+}
+
+.percentage {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  font-family: "Axiforma Bold";
+  font-size: 0.8rem;
+  border-bottom: 1px solid white;
+}
+
+.percentage span {
+  color: #52afee;
+}
+
+.time {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0.7rem 0;
+  font-family: "Axiforma Bold";
+  border-bottom: 1px solid white;
+}
+
+.time span {
+  color: #52afee;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.description div h6 {
+  font-family: "Axiforma Bold";
+}
+
+.description div p {
+  font-family: "Axiforma Bold";
+  font-size: 0.8rem;
+  color: #52afee;
+}
+
+.range p {
+  font-family: "Axiforma Bold";
+  font-size: 0.8rem;
+}
+
+.card section a button {
+  font-family: "Axiforma Bold";
+  font-size: 0.8rem;
+  background-color: transparent;
+  border: 1px solid #52afee;
+  margin-top: 1rem;
+}
+
+@media (max-width: 1140px) {
+  .percentage {
+    font-size: 0.7rem;
+  }
+
+  .time {
+    font-size: 0.7rem;
+  }
+}

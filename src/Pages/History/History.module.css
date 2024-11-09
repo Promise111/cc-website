@@ -1,0 +1,5 @@
+.history {
+  height: 100vh;
+  padding: 10rem 1rem 0 1rem;
+  overflow: scroll;
+}

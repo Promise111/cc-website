@@ -1,0 +1,221 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2vh 7rem;
+  background-color: transparent;
+  position: fixed;
+  z-index: 100;
+}
+
+.nav-shadow {
+  background: rgba(0, 0, 0, 0.7);
+  transition: background 1s linear;
+}
+
+.navbar-logo a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+  color: #5d38db;
+}
+
+.navbar-logo a img {
+  width: 10rem;
+}
+
+.navbar-logo > button {
+  display: none;
+  box-sizing: border-box;
+  /* border: 1px solid rgb(199, 198, 198); */
+  outline: none;
+  border-radius: 6px;
+  padding: 5px 20px;
+  background-color: transparent;
+  font-family: "Axiforma";
+  font-size: 2rem;
+}
+
+.navbar-logo > button:hover {
+  border: none;
+  outline: none;
+}
+
+.market-options {
+  height: 0rem !important;
+  width: 8rem;
+  /* margin-top: 0.8rem; */
+  position: absolute;
+  margin-left: -1.5rem;
+  border-radius: 0.4rem;
+  background-color: #212529 !important;
+  overflow: hidden;
+  transition: height 1s linear;
+}
+
+.market-options a {
+  width: inherit;
+  display: block;
+  text-align: left !important;
+  font-size: 0.7rem !important;
+  font-family: "Axiforma Bold" !important;
+  padding-left: 1rem;
+}
+
+.market-options a:hover {
+  background-color: #fff;
+  color: #52afee;
+}
+
+.market-options a i {
+  width: 0.5rem !important;
+}
+
+.market-options a:not(:last-of-type) {
+  color: #fff !important;
+}
+
+.market:hover .market-options {
+  height: 12rem !important;
+}
+
+.navbar-links ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.navbar-links ul li a i {
+  width: 0.7rem;
+}
+
+ul li a {
+  font-size: 0.6rem !important;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #fff; /* Adjust the color to match your design */
+  transition: color 0.3s ease;
+  font-family: "Axiforma";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.navbar-links a:hover {
+  /* color: #5d38db; */
+  color: #52afee !important;
+}
+
+.navbar-auth {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.navbar-auth > a {
+  font-family: "Axiforma";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #313233;
+  padding: 15px 30px;
+}
+
+.login-link {
+  text-decoration: none;
+  color: #fff !important;
+  font-family: "Axiforma Bold" !important;
+}
+
+.get-started-btn {
+  text-decoration: none;
+  background-color: #52afee;
+  color: #fff !important;
+  font-family: "Axiforma Bold" !important;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  border: 1px solid black;
+  border-radius: 6px;
+}
+
+.get-started-btn:hover,
+.login-link:hover {
+  font-weight: 900;
+}
+
+.get-started-btn:hover {
+  background-color: rgb(
+    240,
+    239,
+    239
+  ); /* Adjust the hover color to match your design */
+}
+.navbar .active {
+  color: #52afee !important;
+}
+
+@media (max-width: 950px) {
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-logo {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar-logo > button {
+    display: block;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+    margin: 1vh 0;
+  }
+  .navbar-links ul {
+    width: 100%;
+    flex-direction: column;
+    justify-content: start;
+    /* gap: 2vw; */
+    gap: 1.823vw;
+  }
+  .navbar-links ul li {
+    width: 100%;
+    text-align: center;
+  }
+  .navbar-auth {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .navbar-auth > a {
+    width: 100%;
+  }
+  .show {
+    display: inline-flex !important;
+  }
+  .market-options {
+    position: static;
+    width: 100%;
+  }
+  .market:hover .market-options {
+    height: max-content !important;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    padding: 2vh 3rem;
+  }
+}

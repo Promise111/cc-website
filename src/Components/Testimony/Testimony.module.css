@@ -1,0 +1,50 @@
+.carousel {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.carousel .item {
+  width: 10rem;
+  height: 10rem;
+  display: flex !important;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.15);
+  margin-right: 15rem !important;
+  border-radius: 1rem;
+}
+
+.carousel > div img {
+  width: 4rem;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.carousel > div p:first-of-type {
+  font-family: "Axiforma";
+}
+
+.carousel > div p:last-of-type {
+  font-family: "Axiforma Bold";
+  margin-top: 1rem;
+}
+
+@media (max-width: 681px) {
+  .carousel {
+    height: 15rem;
+    margin-top: 1rem;
+  }
+  .carousel .item {
+    height: auto;
+    flex-direction: column;
+  }
+  .carousel .item img{
+    height: 50px;
+  }
+  .carousel > div p:first-of-type {
+    font-family: "Axiforma Light";
+    font-size: 10px;
+  }
+}

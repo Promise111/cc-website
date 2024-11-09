@@ -1,0 +1,44 @@
+.crypto {
+  width: 100%;
+  height: auto;
+  padding: 10rem 5rem 0 5rem;
+}
+
+.list {
+  margin: 3rem 0;
+  font-family: "Axiforma Bold";
+  font-size: 15px;
+}
+
+.crypto > .h1 {
+  text-align: center;
+  font-family: "Axiforma Bold";
+  font-size: 50px;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.crypto h3 {
+  font-family: "Axiforma Bold";
+  font-size: 30px;
+}
+
+.crypto div:first-of-type {
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 620px) {
+  .crypto {
+    width: 100%;
+    height: auto;
+    padding: 10rem 2rem 0 2rem;
+  }
+
+  .crypto > .h1 {
+    font-size: 30px;
+  }
+
+  .crypto h3{
+    font-size: 20px;
+  }
+}
